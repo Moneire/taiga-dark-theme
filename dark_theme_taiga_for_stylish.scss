@@ -1,0 +1,5 @@
+@-moz-document regexp('http(s)?://(|www.)?taiga.*/*') {
+
+  @import "dark_theme_taiga";
+
+}

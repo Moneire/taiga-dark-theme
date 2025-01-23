@@ -1,0 +1,1778 @@
+@import "dark_theme_taiga_general";
+
+
+/* --------------------------- Page / --------------------------- */
+
+.watching, .working-on {
+  .duty-single:hover {
+    background: $dark-2;
+  }
+}
+
+.list-itemtype-ticket {
+  .ticket-project {
+    color: $light;
+  }
+
+  .list-itemtype-data-title, .ticket-type {
+    color: $foreground;
+  }
+
+  .ticket-id {
+    color: $primary;
+  }
+}
+
+.watching .duty-single, .working-on .duty-single {
+  border-bottom: 1px solid $light;
+
+}
+
+.empty-ticket:not(:last-child) {
+  border-bottom: 1px solid $light;
+}
+
+.home-project {
+  background: $dark-1;
+  border: 1px solid $light;
+
+  .project-card-name a {
+    color: $foreground;
+  }
+
+  .project-card-header .icon-badge {
+    fill: $primary;
+  }
+
+  .project-card-description {
+    color: $foreground;
+  }
+
+  .statistic {
+    color: mix($foreground, rgba(0, 0, 0, 0.5));
+  }
+
+  .statistic.active {
+    color: $foreground;
+  }
+
+}
+
+.home-wrapper {
+  .title-bar {
+    background: $dark-4;
+  }
+
+}
+
+.empty-ticket {
+  .avatar {
+    background: $dark-3;
+  }
+
+  .line {
+    background: $dark-4;
+  }
+
+}
+
+/* --------------------------- Page /discover --------------------------- */
+
+.discover-header {
+  background-color: $dark-2;
+
+  .project-number {
+    color: $foreground;
+  }
+
+  .search-button {
+    fill: $foreground;
+
+    &:hover {
+      fill: $primary;
+    }
+  }
+}
+
+.highlighted {
+  .title {
+    color: $foreground;
+  }
+
+  .title-wrapper svg {
+    fill: $foreground;
+  }
+}
+
+.highlighted-project {
+  .project-description {
+    color: $foreground;
+  }
+
+  .project-title a {
+    color: $font;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .statistic {
+    color: $foreground;
+
+    svg {
+      fill: $foreground;
+    }
+  }
+}
+
+.discover-header input[type=text] {
+  background: $dark-1;
+  color: $foreground;
+
+  &::placeholder {
+    color: mix($foreground, $dark-1);
+  }
+}
+
+/* --------------------------- Page /notifications --------------------------- */
+
+.notifications-page .header {
+  background: $dark-2;
+}
+
+.notifications-page .title {
+  color: $primary;
+}
+
+.notifications-page .action {
+  color: $primary;
+}
+
+.notifications-page .action.disabled {
+  color: $light;
+}
+
+.entry .entry-date {
+  color: $foreground;
+}
+
+.notifications-page .notifications-list .entry .entry-project {
+  color: $foreground;
+}
+
+.notifications-list .entry a.project-link, .notifications-list .entry a.user-link {
+  color: $white;
+}
+
+.notifications-list .entry {
+  color: $light-1;
+}
+
+/* --------------------------- Page /projects/ --------------------------- */
+
+.project-list-wrapper {
+
+  .icon-badge {
+    fill: $primary;
+    stroke: $primary;
+  }
+
+  .project-list-title {
+    background: $dark-4;
+
+    h1 {
+      color: $primary;
+    }
+  }
+
+  .list-itemtype-project {
+    background: $dark-1;
+
+    .list-itemtype-project-data-wrapper .icon-private {
+      fill: $foreground;
+    }
+  }
+
+  .help-area {
+    color: $foreground;
+  }
+
+}
+
+/* --------------------------- Page /project/*** --------------------------- */
+
+.single-project {
+  .title {
+    background: $dark-3;
+  }
+
+  .project-name {
+    color: $primary;
+  }
+
+  .intro-title .icon-private {
+    fill: $foreground;
+  }
+
+  .involved-team .icon-badge {
+    background-color: $black;
+    fill: $primary;
+  }
+
+}
+
+.profile-timeline .activity-item {
+  .activity-info {
+    color: $foreground;
+  }
+
+  .activity-date {
+    color: $foreground;
+  }
+
+  .username:first-child, a:first-child {
+    color: $foreground;
+  }
+}
+
+.track-inner {
+  background-color: $dark-3;
+  color: $light-1;
+}
+
+.track-icon {
+  fill: $light-1;
+}
+
+.track-button-counter {
+  background: $dark-4;
+  color: $light-1;
+}
+
+.track-button.active {
+  .track-inner {
+    background: mix($primary, rgba(0, 0, 0, 0.9));
+  }
+
+  .track-button-counter {
+    background: mix($primary, rgba(0, 0, 0, 0.6));
+  }
+
+  .icon {
+    fill: $primary;
+  }
+}
+
+.contact-team {
+  background-color: $dark-4;
+  fill: $light-1;
+}
+
+.lightbox-contact-project-name {
+  color: $primary;
+}
+
+.watch-options {
+  a.active {
+    color: $primary;
+  }
+
+  .watch-check svg {
+    fill: $primary;
+  }
+}
+
+.watch-options {
+  background: $dark-1;
+  border: 1px solid $dark-3;
+}
+
+[_nghost-frb-c17] {
+  background-color: $dark-3;
+}
+
+/* --------------------------- Page /project/ *** /kanban --------------------------- */
+
+.kanban-header {
+  background: $dark-1;
+}
+
+.card-placeholder:not(.not-found) {
+  p {
+    color: $foreground;
+  }
+
+  .title {
+    color: $foreground;
+  }
+
+  .placeholder-board-card {
+    background: $dark-1;
+    box-shadow: 4px 4px 8px rgba($dark-1, .5);
+  }
+
+  .placeholder-board-text.big, .placeholder-board-user, .placeholder-board-text,
+  .placeholder-board-avatar, .placeholder-board-text.small {
+    background: $dark-4;
+  }
+}
+
+.kanban.swimlane .kanban-header {
+  background: $dark-1;
+}
+
+.kanban-table-header .task-colum-name {
+  background-color: $dark-3;
+  color: $foreground;
+
+  .title .name {
+    color: $light-1;
+  }
+}
+
+.kanban-table-header {
+  background: $dark-1;
+}
+
+.kanban-swimlane .kanban-table-inner::before {
+  box-shadow: inset 0 4px 8px $shadow;
+}
+
+.kanban-swimlane-title {
+  background: $dark-1;
+  border-bottom: solid 1px $dark-1;
+
+  &.folded {
+    border-bottom: solid 1px $dark-3;
+  }
+
+  .unfold-action, .title-name {
+    fill: $primary;
+    color: $primary;
+  }
+
+  &:hover {
+    .unfold-action, .title-name {
+      fill: $light;
+      color: $light;
+    }
+  }
+}
+
+.kanban-swimlane-add {
+  background: $dark-1;
+  border: 1px dashed mix($primary, rgba(0, 0, 0, 0.5));
+
+  .add-action {
+    fill: $foreground;
+  }
+
+  span {
+    color: $foreground;
+  }
+
+  &:hover {
+    background: $dark-2;
+
+    .add-action {
+      fill: $primary;
+    }
+
+    span {
+      color: $primary;
+    }
+
+  }
+
+}
+
+tg-input-search tg-svg svg {
+  fill: $primary;
+}
+
+.zoom-radio {
+  input:checked ~ .checkmark {
+    background-color: $primary;
+  }
+
+  .checkmark {
+    background-color: $dark-3;
+  }
+}
+
+.zoom-radio:hover .checkmark {
+  background-color: $link;
+}
+
+.board-zoom .board-zoom-title {
+  color: $primary;
+}
+
+.kanban-table-body .kanban-uses-box {
+  background-color: $dark-3;
+}
+
+
+.card {
+  background-color: $dark-1;
+  box-shadow: 4px 4px 8px $shadow;
+
+  &:hover {
+    box-shadow: 3px 3px 6px $shadow;
+  }
+
+}
+
+
+.card-inner {
+  background: $dark-1;
+}
+
+.card-title {
+
+  .card-subject {
+    color: $light-1;
+  }
+
+  .card-ref {
+    color: $primary;
+  }
+
+  a:hover {
+    .card-subject {
+      color: $primary;
+    }
+
+    .card-ref {
+      color: $white;
+    }
+  }
+
+}
+
+.kanban-task-counter {
+  align-items: center;
+  background: $dark-1;
+  box-shadow: -4px 2px 5px -2px $shadow;
+  color: $light-1;
+}
+
+.card-statistics .card-completed-tasks {
+  background-color: $dark-3;
+  color: $light-1;
+}
+
+.card-data .card-estimation {
+  background-color: $dark-3;
+  color: $foreground;
+}
+
+.card-assigned-to .extra-assigned, .card-assigned-to img {
+  border: 2px solid $black;
+}
+
+.card-statistics {
+  .statistic {
+    color: $foreground;
+  }
+
+  .icon {
+    fill: $foreground;
+  }
+}
+
+.card-assigned-to .card-not-assigned-title {
+  color: $foreground;
+}
+
+img[title="Not assigned"], img[alt="Not assigned"], img[alt="undefined"] {
+  opacity: 0.5;
+}
+
+.placeholder-collapsed .text-holder {
+  color: $light-1;
+}
+
+.placeholder-collapsed .archived {
+  color: $foreground;
+}
+
+.card-tasks ul {
+  background-color: $dark-2;
+  border-bottom: 1px solid $light;
+}
+
+.card-unfold svg {
+  fill: $light;
+}
+
+.card-task a .card-task-subject {
+  color: $light-1;
+}
+
+.filters-cat-single {
+  border: 1px solid $dark-4;
+  color: $foreground;
+}
+
+.filters-cats li:not(.active):last-child {
+  border-bottom: 1px solid $dark-4;
+}
+
+.filters-cat-single:focus {
+  border: 1px solid $dark-4;
+}
+
+.kanban-filter tg-filter {
+  border: 1px solid $dark-4;
+}
+
+.filters-advanced .filter-mode {
+  color: $foreground;
+}
+
+.custom-filters {
+  color: $light-1;
+  border-bottom: 1px solid $dark-4;
+}
+
+.filters-cat-single.selected {
+  background-color: $dark-3;
+  color: $light-1;
+}
+
+.single-filter {
+  background-color: $dark-2;
+  color: $light-1;
+}
+
+.single-filter .number {
+  background-color: $dark-3;
+  color: $light-1;
+}
+
+/* --------------------------- Page /project/ *** /issues --------------------------- */
+.issue-header {
+  background: $dark-1;
+}
+
+img[src="v-1678106161070/images/unnamed.png"] {
+  opacity: 0.5;
+}
+
+.ticket-status {
+  .type-data .level-data, .severity-data .level-data, .priority-data .level-data {
+    color: $foreground;
+  }
+  .type-data .level-name {
+    color: $foreground;
+  }
+  .severity-data .level-name {
+    color: $foreground;
+  }
+  .priority-data .level-name {
+    color: $foreground;
+  }
+}
+
+.empty-large {
+  img {
+    filter: invert(1) saturate(0) brightness(4);
+  }
+}
+
+.issues-table .subject:hover .issue-ref {
+  color: $foreground;
+}
+
+.issues-table .option:hover {
+  background: $dark-3;
+}
+
+.issue-container {
+  .filters-bar {
+    background: $black;
+
+    tg-filter {
+      border: 1px solid $dark-4;
+    }
+  }
+
+  .issues-table {
+    .arrow-up, .arrow-down {
+      fill: $foreground;
+    }
+
+    .row:not(.title) {
+      color: $foreground;
+    }
+
+    .table-main {
+      background: $dark-3;
+      border: 1px solid $dark-4;
+
+      .popover {
+        background: $dark-3;
+        border: 2px solid $dark-4;
+
+        li:hover {
+          background: $dark-2;
+          color: $foreground;
+        }
+      }
+    }
+
+    .table-main:hover {
+      background: $dark-2;
+    }
+  }
+}
+
+.issues-table .subject .issue-subject {
+  color: inherit;
+}
+
+.filters-step-cat {
+  .single-filter:hover, .single-applied-filter {
+    background: $light;
+    color: $black;
+  }
+
+  .ng-isolate-scope {
+    background: $black;
+  }
+}
+
+.ticket-data-container {
+  div {
+    background: $dark-3 !important;
+  }
+
+  .popover {
+    background: $dark-3 !important;
+    border: 2px solid $dark-4 !important;
+
+    li:hover {
+      background: $dark-2 !important;
+      color: $foreground !important;
+    }
+  }
+}
+
+/* --------------------------- Wiki --------------------------- */
+
+.menu-secondary .wiki-link {
+  border-bottom: 1px solid $light;
+}
+
+.wiki-nav .wiki-link-container.wiki-all-links {
+  border-top: 1px solid $light;
+}
+
+.menu-secondary .wiki-link.active {
+  background: $dark-1;
+}
+
+.menu-secondary .wiki-link.active:hover {
+  background: $dark-1;
+}
+
+.wiki-summary.summary {
+  background: $dark-2;
+  color: $foreground;
+}
+
+.wiki-nav .title {
+  color: $foreground;
+}
+
+.menu-secondary .wiki-link {
+  &:hover {
+    background: $dark-1;
+
+    a {
+      color: $foreground;
+    }
+  }
+
+  a {
+    color: $foreground;
+  }
+}
+
+.wiki-nav input[type=text] {
+  background: $dark-2;
+  color: $foreground;
+}
+
+/* --------------------------- Page /project/ *** /timeline --------------------------- */
+
+.profile-timeline {
+  border-top: 1px solid $dark-4;
+}
+
+.profile-timeline .activity-item {
+  border-bottom: 1px solid $dark-4;
+}
+
+.single-attachment {
+  background: $dark-1;
+}
+
+.profile-timeline .single-attachment .icon {
+  fill: $foreground;
+}
+
+
+/* --------------------------- Page /project/ *** /admin/*** --------------------------- */
+
+.project-privacy-settings label:hover {
+  background: rgba($secondary, .75);
+  color: $font-dark;
+}
+
+.admin-menu {
+  a {
+    color: $foreground;
+  }
+
+  li {
+    border-bottom: 1px solid $light;
+
+    &:hover {
+      background: $dark-1;
+    }
+  }
+}
+
+.settings-nav {
+  background: $dark-2;
+
+  .active {
+    background: $dark-1;
+
+    &:hover {
+      background: $dark-1;
+    }
+
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.menu-tertiary {
+  background-color: $dark-3;
+  border-right: 1px solid $light;
+
+  ul {
+    li {
+      &.active {
+        background: $primary;
+
+        a {
+          background: $dark-4;
+          color: $primary;
+
+          &:hover {
+            background: $dark-1;
+          }
+        }
+      }
+
+      a {
+        color: $foreground;
+      }
+
+      &:hover {
+        background: $dark-1;
+        color: $foreground;
+
+        a {
+          background: $dark-1;
+          color: $foreground;
+        }
+      }
+    }
+  }
+}
+
+.check {
+  background-color: $light;
+  border: 2px solid $light-1;
+}
+
+.project-privacy-settings label {
+  background: $light-1;
+  color: $font-dark;
+}
+
+.admin-common .admin-subtitle {
+  color: $foreground;
+}
+
+.project-values-title {
+  background: $dark-3;
+}
+
+.menu-secondary li {
+  background: $dark-2;
+}
+
+.icon-clipboard {
+  fill: $foreground;
+}
+
+.project-values-body .project-values-row:hover {
+  background: rgba(199, 232, 226, .2);
+}
+
+.custom-fields-table .table-header {
+  border-bottom: 3px solid $light;
+}
+
+.custom-fields-table .single-custom-field {
+  border-bottom: 1px solid $light;
+  color: $foreground;
+}
+
+.admin-swimlanes-manager .admin-swimlane-item {
+  background: $dark-2;
+  color: $light-1;
+}
+
+.admin-wip-manager .admin-swimlane-title {
+  background: $dark-1;
+  border-bottom: 1px solid $dark-1;
+  box-shadow: 4px 4px 4px rgba(216, 222, 233, .5);
+}
+
+tg-wip-limit-selector .wip-limit-status {
+  background: $dark-2;
+  color: $light-1;
+}
+
+tg-wip-limit-selector .wip-number {
+  color: $foreground;
+}
+
+.admin-wip-manager .admin-swimlane-title.folded {
+  border-bottom: solid 1px $light;
+}
+
+.form-button:hover {
+  background: $dark-3;
+}
+
+.admin-swimlanes-manager .admin-swimlane-item .delete-swimlane[disabled] .icon {
+  fill: $light-1;
+}
+
+.admin-membership-table .active {
+  background-color: $dark-4;
+}
+
+.admin-common.admin-roles .total {
+  background-color: $dark-2;
+}
+
+.admin-roles .role-name {
+
+  color: $light-1;
+}
+
+.admin-common .total {
+  color: $font;
+}
+
+.menu-secondary {
+  background: $dark-2;
+}
+
+.menu-secondary .team-filters li.active {
+  background: $dark-1;
+
+  &:hover {
+    background: $dark-1;
+  }
+}
+
+.menu-secondary .team-filters a {
+  color: $foreground;
+}
+
+.menu-secondary .team-filters li:hover {
+  background: $dark-1;
+}
+
+/* --------------------------- Page /project/ *** /us/*** --------------------------- */
+
+.detail {
+  background: $dark-2;
+
+  .detail-content, .detail-header-container {
+    background: $dark-1;
+  }
+}
+
+.detail-title-wrapper .detail-subject {
+  color: $light-1;
+}
+
+.detail-header .detail-project .section-name {
+  color: $light-1;
+}
+
+.related-tasks-body .row {
+  border-bottom: 1px solid $light;
+}
+
+.related-tasks-body .closed, .related-tasks-body .closed:hover {
+  border-left: 10px solid $dark-3;
+  color: $light;
+}
+
+.ticket-created-by .created-by .created-date, .ticket-created-by .created-by .created-title {
+  color: $light-1;
+}
+
+.wysiwyg p, tg-html-editor .ck-content p {
+  font-size: .875rem;
+  color: $light-1;
+}
+
+.related-tasks-body .task-name .task-name-subject {
+  color: $light-1;
+}
+
+.attachments-header {
+  background: $dark-2;
+
+  .attachments-title {
+    color: $light-1;
+  }
+}
+
+.related-tasks-header {
+  background: $dark-2;
+
+  .related-tasks-title {
+    color: $light-1;
+  }
+}
+
+.related-tasks-body .single-related-task:hover {
+  background: rgba($secondary, 0.1);
+}
+
+.avatar img {
+  border: 2px solid $black;
+}
+
+.history-tabs {
+  background: $dark-2;
+
+  .history-tab.active {
+    border-bottom: 3px solid $light-1;
+    color: $light-1;
+  }
+
+  .history-tab {
+    color: $light;
+  }
+}
+
+.ck.ck-editor__main > .ck-editor__editable {
+  background: $dark-1 !important;
+}
+
+.activity-diff .key {
+  background: $dark-3;
+}
+
+.activity .activity-date {
+  color: $foreground;
+}
+
+.ticket-data {
+  background: $dark-2;
+}
+
+.ticket-estimation .ticket-role-points {
+  background: $dark-2;
+  color: $foreground;
+}
+
+.ticket-section-label {
+  color: $light-1;
+}
+
+.ticket-section:not(:last-child) {
+  border-bottom: 1px solid $light;
+}
+
+.ticket-users-actions .ticket-users-action {
+  background: $dark-1;
+  color: $foreground;
+}
+
+.ticket-estimation {
+  .ticket-role-points {
+    color: $foreground;
+
+    &:last-child {
+      background: $dark-3;
+    }
+
+    .points {
+      color: $light-1;
+    }
+  }
+}
+
+.ticket-detail-settings [class^=btn-]:not(.select-option):not(.show-closed) {
+  background: $dark-3;
+  color: $primary;
+
+  &:hover {
+    background: $dark-4;
+    color: $foreground;
+  }
+}
+
+.ck.ck-toolbar {
+  background: $dark-2 !important;
+  border: 1px solid $light !important;
+}
+
+.wysiwyg li, tg-html-editor .ck-content li {
+  color: $light-1;
+}
+
+.wysiwyg strong, tg-html-editor .ck-content strong {
+  color: $light-1;
+}
+
+.wysiwyg .table table td, .wysiwyg table td, tg-html-editor .ck-content .table table td, tg-html-editor .ck-content table td {
+  color: $foreground;
+}
+
+.wysiwyg .table table td, .wysiwyg .table table th, .wysiwyg table td, .wysiwyg table th, tg-html-editor .ck-content .table table td, tg-html-editor .ck-content .table table th, tg-html-editor .ck-content table td, tg-html-editor .ck-content table th {
+  border: 1px solid $light;
+}
+
+.wysiwyg .table table th, .wysiwyg table th, tg-html-editor .ck-content .table table th, tg-html-editor .ck-content table th {
+  background-color: $dark-2;
+  color: $light-1;
+}
+
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border-color: $light !important;
+}
+
+.ck.ck-reset_all, .ck.ck-reset_all * {
+  color: unset !important;
+}
+
+.attachments-empty {
+  border: 3px dashed $light;
+  color: $foreground;
+}
+
+.ticket-header .pop-status {
+  background: $dark-1;
+  border: 1px solid $dark-2;
+  color: $primary;
+}
+
+.ticket-header .pop-status li:hover {
+  background: $dark-3;
+  color: $foreground;
+
+  a {
+    color: $foreground;
+  }
+}
+
+.wysiwyg h1, .wysiwyg h2, .wysiwyg h3, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6, tg-html-editor .ck-content h1, tg-html-editor .ck-content h2, tg-html-editor .ck-content h3, tg-html-editor .ck-content h4, tg-html-editor .ck-content h5, tg-html-editor .ck-content h6 {
+  color: $light-1;
+}
+
+.edit-title-wrapper .edit-title-input {
+  background: $dark-1;
+}
+
+/* --------------------------- General fix --------------------------- */
+
+.related-tasks-body .pop-status, .ticket-estimation .popover, .global-popover {
+  background: $dark-1;
+  border: 1px solid $dark-3;
+  box-shadow: 4px 4px 8px rgba(46, 52, 64, .1);
+  color: $primary;
+}
+
+.related-tasks-body .pop-status li:hover, .ticket-estimation .popover li:hover {
+  background: $dark-3;
+  color: $foreground;
+}
+
+.global-popover button:hover {
+  background: $dark-3;
+  color: $foreground;
+}
+
+.global-popover button {
+  color: $foreground;
+}
+
+.related-tasks-body .pop-status li:hover a, .ticket-estimation .popover li:hover a {
+  color: $foreground;
+}
+
+.ticket-estimation .popover::before {
+  background: $dark-1;
+}
+
+.auth {
+  background: $dark-1;
+}
+
+.auth .logo, .auth .tagline {
+  color: $foreground;
+}
+
+.profile-content-tabs .tab.active {
+  background: $dark-1;
+  border-left: 1px solid $dark-2;
+  border-right: 1px solid $dark-2;
+}
+
+.profile-content-tabs .tab.active, .profile-content-tabs .tab:hover {
+  color: $foreground;
+}
+
+.profile-content-tabs {
+  border-top: 1px solid $light;
+}
+
+.profile-filter {
+  background: $dark-1;
+}
+
+.profile-sidebar h4 {
+  background: $dark-2;
+  color: $foreground;
+}
+
+.kanban-table-body .taskboard-column.target-drop {
+  background-color: $dark-2;
+}
+
+.single-filter.single-filter-type-tag {
+  color: $black;
+  font-weight: 600;
+}
+
+.card-tags .card-tag {
+  color: $black;
+  font-weight: 600;
+}
+
+.single-filter .user-pic {
+  border: 2px solid $black;
+}
+
+.table-team .attribute .points {
+  color: $foreground;
+}
+
+.table-team .avatar .position {
+  color: $foreground;
+}
+
+.card-actions button.popover-open, .card-actions button:hover {
+  background: $dark-2;
+}
+
+@keyframes new-us-status-blink {
+  0% {
+    background-color: $dark-2;
+  }
+  100% {
+    background-color: $dark-3;
+  }
+}
+
+.lightbox-generic-bulk .bulk-status-option-wrapper, tg-swimlane-selector .select, tg-swimlane-selector .options,
+.lightbox-create-edit .pop-status, .pika-single, .lightbox-create-edit .pop-users,
+.add-tag-input .tags-dropdown, .color-selector-dropdown {
+  background: $dark-3;
+  border: 2px solid $dark-4;
+  color: $white;
+}
+
+.add-tag-input li.selected, .add-tag-input li:hover {
+  background: $dark-4;
+}
+
+.lightbox-create-edit .pop-users::before {
+  background: $dark-3;
+}
+
+.lightbox-create-edit .pop-users .user-list-single .user-list-name {
+  color: $light-1;
+}
+
+.pika-label {
+  background-color: $dark-3;
+  color: $foreground;
+}
+
+.pika-button {
+  color: $foreground;
+  background: $dark-3;
+}
+
+.lightbox-create-edit .pop-users .user-list-single:hover {
+  background: $dark-2;
+}
+
+tg-swimlane-selector .option:hover, .lightbox-generic-bulk .bulk-status-option:hover,
+.lightbox-create-edit .pop-status li:hover {
+  background: $dark-2;
+  color: $foreground;
+}
+
+.lightbox-create-edit .pop-status li:hover a {
+  color: $foreground;
+}
+
+.lightbox-generic-bulk .bulk-status-selector, .lightbox-create-edit .status-dropdown,
+.ticket-header .detail-status-inner > span, .tag {
+  color: $dark-1;
+  font-weight: 600;
+}
+
+.lightbox-create-edit .status-dropdown svg, .tag .icon-close {
+  fill: $dark-1;
+}
+
+tg-swimlane-selector .options {
+  box-shadow: 4px 4px 8px rgba($dark-1, .5);
+}
+
+.lightbox-generic-bulk .label, .lightbox-create-edit .creation-position .label, .lightbox-create-edit .swimlane-select .label, .lightbox-generic-bulk .creation-position .label, .lightbox-generic-bulk .swimlane-select .label {
+  color: $light-1;
+}
+
+.ticket-user-list .user-list-single:hover:not(.read-only) {
+  background: rgba($black, .4);
+}
+
+.ticket-header .pop-status .priority, .ticket-header .pop-status .role, .ticket-header .pop-status .severity, .ticket-header .pop-status .status, .ticket-header .pop-status .type {
+  color: $primary;
+}
+
+.loader p {
+  color: $foreground;
+}
+
+.ck.ck-button:not(.ck-disabled):hover, a.ck.ck-button:not(.ck-disabled):hover {
+  background: $dark-4 !important;
+}
+
+.ck.ck-splitbutton.ck-splitbutton_open > .ck-button:not(.ck-on):not(.ck-disabled):not(:hover), .ck.ck-splitbutton:hover > .ck-button:not(.ck-on):not(.ck-disabled):not(:hover) {
+  background: $dark-3 !important;
+}
+
+.ck.ck-button.ck-on, a.ck.ck-button.ck-on {
+  background: $dark-4 !important;
+}
+
+.ck.ck-dropdown__panel {
+  box-shadow: $shadow, 0 0 !important;
+  background: $dark-2 !important;
+  border: 1px solid $dark-4 !important;
+}
+
+.ck.ck-input-text {
+  background: $dark-2 !important;
+  border: 1px solid $dark-4 !important;
+}
+
+.ck.ck-labeled-field-view > .ck.ck-labeled-field-view__input-wrapper > .ck.ck-label {
+  background: $dark-2 !important;
+}
+
+.lb-user-list .user-list-name {
+  color: $foreground;
+}
+
+.lb-user-list .user-list-item.selected, .lb-user-list .user-list-item:hover {
+  background-color: $dark-2;
+}
+
+.lb-user-list .user-list-item:hover {
+  transition-delay: .0s;
+}
+
+.lb-user-list .user-list-item {
+  border-bottom: 1px solid $light;
+}
+
+.lb-user-list .user-list-item.is-active {
+  background-color: $dark-1;
+}
+
+.kanban-swimlane-title .default-swimlane .default-text {
+  color: $foreground;
+}
+
+.kanban-swimlane-title .default-swimlane .default-swimlane-icon .icon {
+  fill: rgba(246, 201, 92, .5);
+  stroke: rgba(246, 201, 92, .75);
+}
+
+.kanban-swimlane-title.folded .title-name {
+  color: $foreground;
+}
+
+.kanban-swimlane-title.folded tg-svg {
+  fill: $foreground;
+}
+
+.icon-folded-swimlane {
+  color: $foreground;
+  fill: $foreground;
+  stroke: $foreground;
+}
+
+.menu-secondary .team-filters li {
+  border-bottom: 1px solid $light;
+}
+
+.admin-submenu li {
+  border-bottom: 1px solid $light;
+}
+
+.table-team .hero .row {
+  border-bottom: 1px solid $light;
+  border-top: 1px solid $light;
+}
+
+.basic-table .row {
+  border-bottom: 1px solid $light;
+}
+
+.add-member-suggest .add-member-suggest-single {
+  background: $dark-1;
+  border-bottom: 1px solid $light;
+}
+
+.notifications-page .notifications-list .entry.new {
+  background-color: $dark-2;
+}
+
+.notifications-list .entry.new {
+  background-color: $dark-1;
+}
+
+.list-itemtype-project {
+  border-bottom: 1px solid $light;
+}
+
+.ck-content pre {
+  color: $white !important;
+  background: hsla(0, 0%, 78%, .2) !important;
+  border: 1px solid $light !important;
+}
+
+.ck.ck-balloon-panel.ck-balloon-panel_visible {
+  background: $dark-2 !important;
+  border-color: $light !important;
+}
+
+.ck.ck-list {
+  background: $dark-1 !important;;
+}
+
+/* --------------------------- Page /project/ *** /epics --------------------------- */
+
+.lightbox-create-epic label {
+  background: $dark-4;
+  border: 1px solid $light;
+  color: $light-1;
+}
+
+.epic-row {
+  background: $dark-3;
+  border: 1px solid $dark-4;
+
+  .progress-bar {
+    background-color: $black;
+  }
+
+  &:hover {
+    background: $dark-2;
+  }
+
+  .name .subject {
+    color: $foreground;
+
+  }
+}
+
+.epic-row.unfold, .epic-row:hover {
+  background-color: $dark-2;
+}
+
+.story-row {
+
+  background: $dark-1;
+
+}
+
+.story-row:hover {
+  background-color: $dark-3;
+}
+
+.story-row .progress-bar {
+  background: #30363d;
+}
+
+tg-related-userstory-row .related-text .related-subject {
+  color: $foreground;
+}
+
+
+.related-userstories-header {
+
+  background: $dark-2;
+
+  .related-userstories-title {
+    color: $light-1;
+
+  }
+
+}
+
+.attachment-list .single-attachment {
+
+  border-bottom: 1px solid $light;
+
+}
+
+tg-related-userstory-row {
+
+  border-bottom: 1px solid $light;
+
+}
+
+tg-related-userstory-row.sortable:hover {
+  background: $dark-4;
+}
+
+.empty-burndown {
+  background: $dark-3;
+}
+
+.sprints .sprint .sprint-date {
+  color: $foreground;
+}
+
+.sprints h1 {
+  color: $light-1;
+}
+
+/* --------------------------- Page /project/ *** /backlog --------------------------- */
+
+
+.summary-progress-bar .project-points-progress {
+  background: $dark-1;
+}
+
+.summary-progress-bar {
+  background: $dark-1;
+}
+
+.backlog-top {
+  background-color: $dark-1;
+}
+
+.backlog-menu {
+  color: $light-1;
+}
+
+.backlog-header-title h2{
+  color: $light-1;
+}
+
+.backlog-stories-number {
+  color: $foreground;
+}
+
+.backlog-table-header {
+  background-color: $dark-1;
+}
+
+
+.backlog-table-header .backlog-table-title>div {
+  color: $foreground;
+}
+
+.backlog-table-body .row, .multiple-drag-mirror .row {
+  background-color: $dark-3;
+  border: 1px solid $dark-4;
+}
+
+.backlog-table-body .user-story-name, .multiple-drag-mirror .user-story-name {
+  color: $foreground;
+}
+
+
+.backlog-table-body .row:hover:not(.blocked), .multiple-drag-mirror .row:hover:not(.blocked) {
+  background-color: $dark-2;
+}
+
+
+.backlog-table-body .us-points, .multiple-drag-mirror .us-points {
+  background-color: $dark-2;
+  color: $light-1;
+}
+
+.custom-checkbox {
+  background-color: $dark-1;
+  border: 2px solid $dark-4;
+}
+
+
+.backlog-table-body .us-option-popup-button:hover {
+  background: $dark-1;
+}
+
+
+.sprints .sprint-progress-bar {
+  background-color: $black;
+  box-shadow: inset -2px 1px 3px rgba($white, .8);
+}
+
+.sprints .sprint-table .sprint-empty {
+  background: $dark-2;
+  border: 2px dashed $secondary;
+  color: $foreground;
+}
+
+.multiple-drag-mirror.us-item-row {
+  background: $dark-2;
+  border: 1px solid $secondary;
+}
+
+.sprints .sprint-table .row {
+  background: #21262d;
+  border-bottom: 1px solid $light-1;
+
+}
+
+.sprints .sprint-table .row .us-name-text {
+  color: $light-1;
+
+}
+
+.sprints .sprint-table .row .points-container {
+  background: $dark-2;
+  color: $light-1;
+}
+
+.sprints .sprint .sprint-summary:hover .edit-sprint {
+  background: rgba($black, .8);
+}
+
+.sprints .sprint-table .row.closedRow:hover {
+  background: $dark-2;
+}
+
+.backlog-table-body .pop-role, .backlog-table-header .pop-role {
+
+  background: $dark-1;
+  border: 1px solid $light;
+
+  color: $primary;
+
+}
+
+.backlog-table-body .pop-role li:hover, .backlog-table-header .pop-role li:hover {
+  background: $dark-3;
+  color: $foreground;
+}
+
+.backlog-filter tg-filter {
+  border: 1px solid $light;
+}
+
+.backlog-filter {
+  background-color: $dark-1;
+}
+
+/* --------------------------- Page /project/ *** /taskboard / *** --------------------------- */
+
+.taskboard-header {
+  background: $dark-1;
+}
+
+.taskboard h1 .date,  {
+  color: $light-1;
+  span {
+    color: $light-1;
+  }
+}
+
+.taskboard-row-title-box .us-subject {
+  color: $light-1;
+}
+
+.taskboard-row-title-box .points-value {
+  background: $dark-3;
+}
+
+.taskboard-row-title-box tg-svg svg {
+  fill: $white;
+}
+
+.add-new-task {
+  tg-svg {
+    background-color: unset;
+  }
+}
+
+.taskboard-cards-box, .taskboard-row-title-box .folding-actions {
+  background-color: $dark-3;
+}
+
+
+.taskboard-table .task-colum-name {
+  background-color: $dark-3;
+  color: $light-1;
+}
+
+.taskboard-table .task-colum-name:first-child {
+  background-color: $dark-1;
+}
+
+.in-taskboard.empty {
+  background: $dark-3;
+}
+
+.in-taskboard .sprint-issues-title-txt {
+  color: $foreground;
+}
+
+.taskboard-row-title-box .folding-actions:hover {
+  background-color: $dark-2;
+}
+
+.taskboard-table-body .column-fold .taskboard-row-title-box, .taskboard-table-body .row-fold .taskboard-row-title-box {
+  background-color: $dark-3;
+}
+
+.taskboard-table-body .column-fold .taskboard-row-title-box .us-subject, .taskboard-table-body .row-fold .taskboard-row-title-box .us-subject {
+  color: $light-1;
+}
+
+.taskboard-table-body .taskboard-column.target-drop {
+  background-color: $dark-2;
+}
+
+@keyframes new-task-status-blink {
+  0% {
+    background-color: $dark-2
+  }
+
+  100% {
+    background-color: $dark-3
+  }
+}
+
+.button-group {
+  background-color: $dark-3;
+  border-bottom: 1px solid $primary;
+
+}
+
+
+.button-group input:checked+label {
+  background-color: $dark-1;
+  border: 1px solid $primary;
+  border-bottom: 1px solid $dark-1;
+  color: $primary;
+}
+
+
+.search-list ul {
+  background: $dark-1;
+  border: 2px solid $light;
+}
+
+.search-list .choice {
+  color: $light-1;
+}
+
+.in-taskboard {
+  background: $dark-4;
+}
+
+.issues-table .row:not(.title) {
+  background: $dark-3;
+  color: $foreground;
+}
+
+.issues-table .row:not(.title):hover {
+  background: $dark-4;
+}
+
+.issues-table .options {
+  background-color: $dark-1;
+  border: 1px solid $light;
+  box-shadow: 4px 4px 8px rgba($light, .5);
+}
+
+.issues-table .options-field .options-button.active {
+  background: $dark-1;
+}
+
+.card-placeholder:not(.not-found) .placeholder-board-last-text {
+  background: $dark-3;
+}
+
+
+// Create project
+
+.create-project-selector a {
+  border-bottom: 1px solid $light;
+  color: $foreground;
+}
+
+.newsletter-email label, .newsletter-email p {
+  color: $light-1;
+}
+
+.create-project-selector-question svg {
+  fill: $foreground;
+}
+
+.create-project input+label {
+  color: $light-1;
+  background: $dark-3;
+}
+
+.create-project-privacity label:hover {
+  background: $dark-4;
+}
+
+.flotTip {
+  background-color: $dark-3!important;
+}
+
+.doom-line span {
+  color: $black;
+}
